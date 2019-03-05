@@ -1,6 +1,6 @@
 import copy
 
-from data import SortData
+from sortvis.data import SortData
 
 def BucketSort(sv):
     assert isinstance(sv, SortData), "Type Error"

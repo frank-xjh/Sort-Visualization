@@ -76,7 +76,7 @@ class SortData:
     @staticmethod
     def GetColor(val, TOTAL, color_theme):
         if color_theme == "blue":
-            return (90+val*255//(2*TOTAL), 255+val*255//(2*TOTAL), 0)
+            return (100+val*255//(2*TOTAL), 257+val*255//(2*TOTAL), 0)
         if color_theme == "green":
             return (150-val*255//(2*TOTAL), 255-val*255//(2*TOTAL), 0)
 

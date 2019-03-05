@@ -1,6 +1,6 @@
-from data import SortData
-from bubblesort import BubbleSort
-from bucketsort import BucketSort
+from sortvis.data import SortData
+from sortvis.bubblesort import BubbleSort
+from sortvis.bucketsort import BucketSort
 
 import argparse
 parser=argparse.ArgumentParser(description="Sort Visulization")
@@ -15,9 +15,7 @@ parser.add_argument('-c','--color-theme',type=str,default='blue',
                                     choices=["blue", "green"])
 args=parser.parse_args()
 
-
-
-if __name__ == "__main__":
+def main():
     MAXLENGTH=1024
     Length=args.length if args.length<MAXLENGTH else MAXLENGTH
     Interval=args.interval
@@ -39,3 +37,6 @@ if __name__ == "__main__":
     sv.StopTimer()
     sv.SetTimeInterval(0)
     sv.Visualize()
+
+if __name__ == "__main__":
+    main()

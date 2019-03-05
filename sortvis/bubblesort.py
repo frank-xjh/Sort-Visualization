@@ -1,4 +1,4 @@
-from data import SortData
+from sortvis.data import SortData
 
 def BubbleSort(sv):
     assert isinstance(sv, SortData), "Type Error"
